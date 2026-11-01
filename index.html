@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gais Abdu Rashid | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b16;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #0d1222;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #7c9cff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #7c9cff;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h3 {
+    color: #8ba6ff;
+    font-size: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 65px);
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #7c9cff;
+}
+
+.hero p {
+    color: #aab2c8;
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #6687ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4264e8;
+    transform: translateY(-3px);
+}
+
+.heading {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: #8ba6ff;
+}
+
+.about p {
+    color: #b8bfd2;
+    line-height: 1.9;
+    font-size: 17px;
+    max-width: 800px;
+}
+
+.skills-container,
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.skill, .project, .education-card {
+    background: #121a30;
+    border: 1px solid #26365d;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill:hover, .project:hover {
+    transform: translateY(-6px);
+    border-color: #7c9cff;
+}
+
+.skill h3, .project h3 {
+    color: #8ba6ff;
+    margin-bottom: 12px;
+}
+
+.skill p, .project p, .education-card p {
+    color: #aab2c8;
+    line-height: 1.7;
+}
+
+.education-card h3 {
+    margin-bottom: 10px;
+    color: #8ba6ff;
+}
+
+.contact p {
+    color: #b8bfd2;
+    margin: 12px 0;
+}
+
+.contact a {
+    color: #8ba6ff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0d1222;
+    color: #8c96ae;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 6px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 65px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">GAIS.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h3>Hello, I'm</h3>
+
+    <h1>Gais Abdu <span>Rashid</span></h1>
+
+    <p>
+        B.Tech Computer Science and Engineering Student
+        at JCET | Exploring Technology, Programming
+        and the World of Software Development.
+    </p>
+
+    <a href="#about" class="btn">Explore My Portfolio</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="heading">About Me</h2>
+
+    <p>
+        Hey! I'm Gais Abdu Rashid, a second-year B.Tech
+        Computer Science and Engineering student at JCET.
+
+        I'm passionate about technology, coding and
+        exploring new innovations in the world of computer
+        science.
+
+        I enjoy learning programming, developing creative
+        ideas and improving my technical skills.
+        My goal is to become a skilled software developer
+        and build solutions that make a difference.
+    </p>
+</section>
+
+<section id="education">
+    <h2 class="heading">Education</h2>
+
+    <div class="education-card">
+        <h3>B.Tech - Computer Science and Engineering</h3>
+        <p>JCET</p>
+        <p>Second Year Student</p>
+        <p>Currently pursuing undergraduate studies.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="heading">My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <h3>Programming</h3>
+            <p>Learning programming and problem solving.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Web Development</h3>
+            <p>Exploring HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Computer Science</h3>
+            <p>Building knowledge in core CS concepts.</p>
+        </div>
+
+        <div class="skill">
+            <h3>Creative Thinking</h3>
+            <p>Interested in innovation and new technologies.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="heading">My Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project">
+            <h3>Personal Portfolio</h3>
+            <p>
+                A responsive personal portfolio website
+                built using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Coming Soon</h3>
+            <p>
+                Exciting new projects are currently
+                in development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact Me</h2>
+
+    <p>Interested in connecting or collaborating?</p>
+
+    <p>Email:
+        <a href="mailto:YOUR_EMAIL@gmail.com">
+            YOUR_EMAIL@gmail.com
+        </a>
+    </p>
+
+    <p>GitHub:
+        <a href="https://github.com/YOUR_USERNAME" target="_blank">
+            Visit My GitHub
+        </a>
+    </p>
+
+    <p>LinkedIn:
+        <a href="https://www.linkedin.com/" target="_blank">
+            Connect with me
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Gais Abdu Rashid | All Rights Reserved</p>
+    <p>Designed with passion 💙</p>
+</footer>
+
+</body>
+</html>
